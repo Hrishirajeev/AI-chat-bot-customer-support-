@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot UI</title>
+  <style>
+    body {
+      background: #f4f6fb;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    #chat-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 30px 30px 20px 30px;
+    }
+    #chat-box {
+      height: 350px;
+      width: 95%;
+      margin: 0 auto 18px auto;
+      padding: 18px;
+      overflow-y: auto;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      background: #f9fafb;
+      font-size: 1.08em;
+    }
+    .msg-user {
+      color: #2b7cff;
+      margin: 8px 0;
+      font-weight: 500;
+    }
+    .msg-bot {
+      color: #222;
+      margin: 8px 0 8px 30px;
+      font-weight: 400;
+      background: #eaf1fb;
+      display: inline-block;
+      padding: 7px 14px;
+      border-radius: 8px;
+    }
+    #chatInput {
+      width: 80%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #d0d0d0;
+      font-size: 1em;
+      margin-right: 30px;
+    }
+    #sendBtn, #downloadBtn, .chat-btn {
+      padding: 10px 22px;
+      border-radius: 6px;
+      border: none;
+      background: #2b7cff;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-right: 8px;
+      margin-top: 10px;
+    }
+    #sendBtn:hover, #downloadBtn:hover, .chat-btn:hover {
+      background: #001939;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:#4a4545; margin-bottom:30px; font-size:3.4em; font-weight:800; letter-spacing:2px;">SMART AI HELP DESK</h1>
+  <div id="chat-container">
+    <div id="chat-box"></div>
+    <div id="spinner" style="display:none; text-align:center; margin:10px 0;">
+      <span style="font-size:2em;">⏳</span>
+    </div>
+    <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off" />
+    <button id="sendBtn">Send</button>
+    <button id="downloadBtn" class="chat-btn">Download Chat History</button>
+    <label for="fileInput" class="chat-btn" style="display:inline-block; margin-top:10px;">Upload File/Image</label>
+    <input type="file" id="fileInput" style="display:none; margin-bottom:10px;">
+  </div>
+  <script>
+    const chatInput = document.getElementById('chatInput');
+    const sendBtn = document.getElementById('sendBtn');
+    const chatBox = document.getElementById('chat-box');
+    const spinner = document.getElementById('spinner');
+
+    function appendMessage(sender, text) {
+      const msgDiv = document.createElement('div');
+      if (sender === 'You') {
+        msgDiv.className = 'msg-user';
+        msgDiv.textContent = sender + ": " + text;
+      } else {
+        msgDiv.className = 'msg-bot';
+        msgDiv.textContent = text;
+      }
+      chatBox.appendChild(msgDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function sendMessage() {
+      const message = chatInput.value.trim();
+      if (!message) return;
+      appendMessage('You', message);
+      chatInput.value = '';
+      spinner.style.display = 'block'; // Show spinner
+
+      fetch('http://localhost:5005/webhooks/rest/webhook', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({sender: "user", message})
+      })
+      .then(r => r.json())
+      .then(data => {
+        data.forEach(msg => { if (msg.text) appendMessage('Bot', msg.text); });
+      })
+      .finally(() => {
+        spinner.style.display = 'none'; // Hide spinner
+      });
+    }
+
+    chatInput.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
+    sendBtn.addEventListener('click', sendMessage);
+
+    const downloadBtn = document.getElementById('downloadBtn');
+    downloadBtn.addEventListener('click', function() {
+      let text = '';
+      chatBox.querySelectorAll('div').forEach(msg => {
+        text += msg.textContent + '\n';
+      });
+      const blob = new Blob([text], {type: 'text/plain'});
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'chat_history.txt';
+      link.click();
+    });
+
+    const fileInput = document.getElementById('fileInput');
+    fileInput.addEventListener('change', function() {
+      const file = fileInput.files[0];
+      if (!file) return;
+      if (file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.style.maxWidth = '200px';
+          img.style.display = 'block';
+          img.style.margin = '10px 0';
+          chatBox.appendChild(img);
+          chatBox.scrollTop = chatBox.scrollHeight;
+        };
+        reader.readAsDataURL(file);
+      } else {
+        const msgDiv = document.createElement('div');
+        msgDiv.textContent = `You uploaded: ${file.name}`;
+        chatBox.appendChild(msgDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+      fileInput.value = '';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fUJSZnJmXXlsbCwCWzR34": "utter_pricing",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fUJSZnJmXXkvApNKSktQiuGL8JsUCAFpfOlI=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fUJSfUppcEp+Zl5ZfWxsLADMLIBg=": "utter_product_info",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fUJSfUppcEp+Zl5ZfS8C40pKS1CJUHUSYGQsAD01Asg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1flFpSWpQXX5Cfk5lcWVsbCwBURCCb": "utter_return_policy",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1flFpSWpQXX5Cfk5lcWUvAvNKSktQiNC3EmBoLAOUkQjs=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fXFpQkF9UEp+RX1pUXFsbCwBVZCC5": "utter_support_hours",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fXFpQkF9UEp+RX1pUXEvAvNKSktQiNC3EmBoLAPayQpU=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fUZqbmBefmA4UqK2NBQAR0R+T": "utter_human_agent",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fUZqbmBefmA4UqCVgWmlJSWoRigbCJsYCADuQPyM=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fkFiZC+TE56aWZOSnFNfWxgIAlXMhXQ==": "utter_payment_methods",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fkFiZC+TE56aWZOSnFNcSMLG0pCS1CEMTcSbHAgB0oUSB": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fX5SSWhRfXJJYUlpcWxsLADMWICs=": "utter_order_status",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fX5SSWhRfXJJYUlpcS8C40pISoFoUHUSYGQsAGDBA6w==": "action_listen",
+    "eJwtisEJgDAMAFfpAE7QVURCKQGDNS1J6qdkdwP6u+NuX76lNQQfKNWoc07rA+ByY06/NFJDjncqSjzEoRZZLzCsJ1MtDXSO0cXcjxfYFiIz": "utter_technical_support",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fkpqckZeZnJgTX1xaUJBfVFJLwMzSkpLUIizaiDU9FgAb9kcD": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnJFZUJCZl15bGwsAtWUebg==": "utter_shipping_info",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnJFZUJCZl15LwKjSkpLUIrjq+My8tHxCBsYCAEnVPb8=": "action_listen"
+  }
+}

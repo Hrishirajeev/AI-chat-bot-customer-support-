@@ -1,0 +1,258 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - good afternoon
+    - greetings
+    - hey there
+    - hi there
+    - hello there
+    - howdy
+    - yo
+    - sup
+    - what's up
+    - hi, I need help
+    - hello, can you assist me?
+    - heyy
+    - hiii
+    - hiya
+    - morning
+    - good day
+    - I need some help
+    - I want to ask something
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - see you later
+    - take care
+    - thanks, bye
+    - thank you, bye
+    - have a nice day
+    - later
+    - I'm done
+    - that's all
+    - talk to you later
+    - peace out
+    - byeeeee
+    - thanks for your help
+    - appreciate your help
+
+- intent: ask_product_info
+  examples: |
+    - What products do you sell?
+    - Tell me about your products
+    - What can I buy?
+    - Show me your products
+    - What items are available?
+    - List your products
+    - What do you offer?
+    - What is in your catalog?
+    - What kind of products do you have?
+    - Can you tell me about your product range?
+    - What are your bestsellers?
+    - Do you have electronics?
+    - Do you sell clothes?
+    - Do you have home appliances?
+    - What are your featured products?
+    - What is your most popular product?
+
+- intent: ask_shipping
+  examples: |
+    - How much is shipping?
+    - What are your shipping options?
+    - Tell me about shipping
+    - How long does delivery take?
+    - Do you offer free shipping?
+    - What is the delivery time?
+    - How do you ship orders?
+    - Can I track my shipment?
+    - Is express shipping available?
+    - Do you ship internationally?
+    - When will my order arrive?
+
+- intent: ask_return_policy
+  examples: |
+    - What is your return policy?
+    - How do I return an item?
+    - Can I return a product?
+    - What is the process for returns?
+    - How long do I have to return something?
+    - Do you offer refunds?
+    - Is there a return fee?
+    - Can I exchange a product?
+    - What items are non-returnable?
+    - How do I get a refund?
+
+- intent: ask_payment_methods
+  examples: |
+    - How can I pay?
+    - What payment options do you have?
+    - Do you accept credit cards?
+    - Can I use PayPal?
+    - What are your payment methods?
+    - Do you accept UPI?
+    - Can I pay on delivery?
+    - Is EMI available?
+    - Do you take net banking?
+    - Can I use Google Pay?
+
+- intent: ask_support_hours
+  examples: |
+    - What are your support hours?
+    - When is customer service available?
+    - When can I contact support?
+    - Are you open on weekends?
+    - What time does support close?
+    - Is support available 24/7?
+    - Can I get help at night?
+    - Do you have holiday hours?
+
+- intent: ask_human_agent
+  examples: |
+    - I want to talk to a human
+    - Can I speak to a real person?
+    - Connect me to an agent
+    - I need human help
+    - Let me talk to customer support
+    - Can I chat with a representative?
+    - I want to talk to someone
+    - Give me a human agent
+
+- intent: ask_order_status
+  examples: |
+    - What is the status of my order?
+    - Track my order
+    - Where is my order?
+    - Has my order shipped?
+    - Is my order out for delivery?
+    - Can you check my order status?
+    - When will my order arrive?
+    - Order tracking
+    - Check order progress
+    - Is my package on the way?
+
+- intent: ask_technical_support
+  examples: |
+    - I need technical support
+    - I have a technical issue
+    - Something is not working
+    - My product is broken
+    - I need help with setup
+    - Can you help me troubleshoot?
+    - My device won't turn on
+    - I have a problem with my order
+    - Can you fix this issue?
+    - I need help with installation
+
+- intent: ask_pricing
+  examples: |
+    - What is the price of [headphones](product)?
+    - How much does [laptop](product) cost?
+    - Tell me the price of [shoes](product)
+    - What are your prices?
+    - How much is [mobile](product)?
+    - Give me the cost of [tablet](product)
+    - What is the price range?
+    - Are there any discounts?
+    - Do you have any offers?
+    - Is there a sale on [TV](product)?
+
+- intent: provide_name
+  examples: |
+    - My name is [Rahul](name)
+    - I am [Priya](name)
+    - Call me [Alex](name)
+    - [Suresh](name)
+    - It's [Anjali](name)
+    - You can call me [Sam](name)
+    - I'm [Ravi](name)
+    - [Neha](name)
+    - My name's [Vikram](name)
+    - my name is [George](name)
+    - my name is [geoge](name)
+    - my name is [rahul](name)
+
+- intent: ask_show_logo
+  examples: |
+    - show me your company logo
+    - can I see your logo?
+    - display your logo
+    - show logo
+    - company logo please
+    - I want to see your logo
+    - logo image
+    - show me the logo
+
+- intent: ask_product_link
+  examples: |
+    - show me the product catalog
+    - product catalog link
+    - where can I find your products?
+    - show me your product page
+    - give me the product link
+    - product website
+    - link to your products
+    - where can I browse your products?
+
+- intent: ask_product_card
+  examples: |
+    - show me a product card
+    - tell me about your featured product
+    - show me a featured product
+    - display a product card
+    - product card please
+
+- intent: ask_help
+  examples: |
+    - what can you help me with?
+    - what do you do?
+    - how can you assist me?
+    - what support do you offer?
+    - what are your capabilities?
+    - how can you help me?
+    - what services do you provide?
+    - what can you do for me?
+    - what are you able to do?
+    - what is your function?
+    - what topics can you help with?
+    - what are your skills?
+    - what can you answer?
+    - what questions can I ask you?
+    - what is your purpose?
+    - what are you here for?
+    - what can you help with?
+    - what is your job?
+    - what are you good at?
+    - what can you assist with?
+    - what are your main features?
+
+- intent: introduce_yourself
+  examples: |
+    - my name is [Rahul](name)
+    - my name is [Priya](name)
+    - my name is [abc](name)
+    - my name is [xyz](name)
+    - my name is [Sam](name)
+    - my name is [AnyName](name)
+    - hi my name is [Ravi](name)
+    - hi my name is [Pooja](name)
+    - hi my name is [TestUser](name)
+    - hi my name is [abv](name)
+    - hi my name is [qwerty](name)
+    - hi my name is [randomuser](name)
+    - hi my name is [user123](name)
+    - hi my name is [botman](name)
+    - hi my name is [guest](name)
+
+- regex: name
+  examples: |
+    - [A-Za-z]+

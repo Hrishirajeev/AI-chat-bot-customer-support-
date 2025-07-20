@@ -1,0 +1,19 @@
+{
+  "0": "ask_help",
+  "1": "ask_help_topic",
+  "2": "ask_human_agent",
+  "3": "ask_order_status",
+  "4": "ask_payment_methods",
+  "5": "ask_pricing",
+  "6": "ask_product_card",
+  "7": "ask_product_info",
+  "8": "ask_product_link",
+  "9": "ask_return_policy",
+  "10": "ask_shipping",
+  "11": "ask_show_logo",
+  "12": "ask_support_hours",
+  "13": "ask_technical_support",
+  "14": "goodbye",
+  "15": "greet",
+  "16": "provide_name"
+}

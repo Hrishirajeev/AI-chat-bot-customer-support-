@@ -1,0 +1,102 @@
+version: "3.1"
+
+stories:
+  # Add your customer support stories here. Example:
+  # - story: ask about product info
+  #   steps:
+  #   - intent: ask_product_info
+  #   - action: utter_product_info
+- story: ask about product info
+  steps:
+  - intent: ask_product_info
+  - action: utter_product_info
+
+- story: ask about shipping
+  steps:
+  - intent: ask_shipping
+  - action: utter_shipping_info
+- story: ask for human agent
+  steps:
+  - intent: ask_human_agent
+  - action: utter_human_agent
+
+- story: ask for order status
+  steps:
+  - intent: ask_order_status
+  - action: utter_order_status
+
+- story: ask for pricing
+  steps:
+  - intent: ask_pricing
+  - action: utter_pricing
+
+- story: ask for support hours
+  steps:
+  - intent: ask_support_hours
+  - action: utter_support_hours
+
+- story: ask for technical support
+  steps:
+  - intent: ask_technical_support
+  - action: utter_technical_support
+
+- story: ask about return policy
+  steps:
+  - intent: ask_return_policy
+  - action: utter_return_policy
+
+- story: greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: ask about payment methods
+  steps:
+  - intent: ask_payment_methods
+  - action: utter_payment_methods
+
+- story: ask about product info
+  steps:
+  - intent: ask_product_info
+  - action: action_check_repeat_intent
+  - action: utter_product_info
+
+- story: user requests human agent
+  steps:
+  - intent: ask_human_agent
+  - action: utter_human_agent
+
+- story: user provides name
+  steps:
+  - intent: provide_name
+  - action: utter_greet_personal
+
+- story: show company logo
+  steps:
+  - intent: ask_show_logo
+  - action: utter_show_logo
+
+- story: show product link
+  steps:
+  - intent: ask_product_link
+  - action: utter_product_link
+
+- story: show help topic buttons
+  steps:
+  - intent: ask_help_topic
+  - action: utter_ask_help
+
+- story: show product card
+  steps:
+  - intent: ask_product_card
+  - action: utter_product_card
+
+- story: user asks for help
+  steps:
+  - intent: ask_help
+  - action: utter_ask_help
+
+- story: greet with name
+  steps:
+    - intent: introduce_yourself
+    - action: utter_greet_personal

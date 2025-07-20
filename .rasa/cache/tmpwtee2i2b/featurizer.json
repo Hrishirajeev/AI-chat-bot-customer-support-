@@ -1,0 +1,73 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "ask_help_topic": 0,
+        "ask_human_agent": 1,
+        "ask_order_status": 2,
+        "ask_payment_methods": 3,
+        "ask_pricing": 4,
+        "ask_product_card": 5,
+        "ask_product_info": 6,
+        "ask_product_link": 7,
+        "ask_return_policy": 8,
+        "ask_shipping": 9,
+        "ask_show_logo": 10,
+        "ask_support_hours": 11,
+        "ask_technical_support": 12,
+        "back": 13,
+        "goodbye": 14,
+        "greet": 15,
+        "nlu_fallback": 16,
+        "out_of_scope": 17,
+        "provide_name": 18,
+        "restart": 19,
+        "session_start": 20
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_check_repeat_intent": 13,
+        "utter_already_answered": 14,
+        "utter_ask_help_topic": 15,
+        "utter_fallback": 16,
+        "utter_goodbye": 17,
+        "utter_greet": 18,
+        "utter_greet_personal": 19,
+        "utter_human_agent": 20,
+        "utter_order_status": 21,
+        "utter_payment_methods": 22,
+        "utter_pricing": 23,
+        "utter_product_card": 24,
+        "utter_product_info": 25,
+        "utter_product_link": 26,
+        "utter_return_policy": 27,
+        "utter_shipping_info": 28,
+        "utter_show_logo": 29,
+        "utter_support_hours": 30,
+        "utter_technical_support": 31
+      },
+      "entities": {
+        "name": 0
+      },
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

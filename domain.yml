@@ -1,0 +1,120 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_product_info
+  - ask_shipping
+  - ask_return_policy
+  - ask_payment_methods
+  - ask_support_hours
+  - ask_human_agent
+  - ask_order_status
+  - ask_technical_support
+  - ask_pricing
+  - provide_name
+  - ask_show_logo
+  - ask_product_link
+  - ask_help_topic
+  - ask_product_card
+  - ask_help
+  - introduce_yourself
+
+entities:
+  - name
+
+responses:
+  utter_greet:
+    - text: "👋 Hello! Welcome to our customer support! I'm here to help you with any questions about our products, orders, or services. How can I assist you today?"
+    - text: "Hi there! 😊 I'm your AI customer support assistant. I can help with products, shipping, returns, and more. What would you like to know?"
+    - text: "Hello! Welcome! I'm here to provide quick support for all your questions. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Thank you for contacting us! 😊 Have a wonderful day, and don't hesitate to reach out if you need anything else!"
+    - text: "Goodbye! Thanks for choosing us. We're always here when you need support. Take care! 👋"
+    - text: "See you later! Remember, our support team is available 24/7 for any questions. Have a great day!"
+
+  utter_product_info:
+    - text: "🛍️ We offer a wide range of products including:\n\n📱 Electronics (smartphones, laptops, tablets)\n👕 Fashion & Apparel\n🏠 Home & Garden items\n🎮 Gaming accessories\n💄 Beauty & Personal Care\n\nWhat specific category interests you? I can provide more details!"
+    - text: "Our product catalog includes:\n• Premium electronics and gadgets\n• Fashion for men, women & kids\n• Home improvement items\n• Sports & outdoor gear\n• Health & wellness products\n\nWhich category would you like to explore?"
+
+  utter_shipping_info:
+    - text: "🚚 **Shipping Information:**\n\n• **FREE shipping** on orders over $50\n• **Standard shipping:** $5.99 (3-5 business days)\n• **Express shipping:** $12.99 (1-2 business days)\n• **Same-day delivery** available in select cities\n\nWe ship Monday-Friday. Orders placed before 2 PM ship same day!"
+    - text: "**Shipping Options:**\n✅ Standard: $5.99 (3-5 days)\n✅ Express: $12.99 (1-2 days)\n✅ FREE on orders $50+\n✅ Same-day delivery available\n\nAll orders include tracking information!"
+
+  utter_return_policy:
+    - text: "↩️ **Return Policy:**\n\n• **30-day return** window from purchase date\n• Items must be in **original condition** with tags\n• **FREE return shipping** - we provide prepaid labels\n• **Full refund** processed within 5-7 business days\n• **Easy online returns** - just visit our returns portal\n\nNo questions asked returns! Your satisfaction is guaranteed."
+    - text: "**Returns Made Easy:**\n✅ 30-day return window\n✅ Free return shipping labels\n✅ Full refund guarantee\n✅ Simple online return process\n✅ No restocking fees\n\nStart a return anytime from your account!"
+
+  utter_payment_methods:
+    - text: "💳 **Payment Methods We Accept:**\n\n• **Credit Cards:** Visa, MasterCard, American Express, Discover\n• **Digital Wallets:** PayPal, Apple Pay, Google Pay\n• **Buy Now Pay Later:** Klarna, Afterpay\n• **Bank Transfer** for large orders\n• **Gift Cards & Store Credit**\n\nAll payments are secure and encrypted! 🔒"
+    - text: "**Secure Payment Options:**\n✅ All major credit cards\n✅ PayPal & digital wallets\n✅ Buy now, pay later options\n✅ Bank transfers accepted\n✅ 256-bit SSL encryption\n\nYour payment information is always protected!"
+
+  utter_support_hours:
+    - text: "🕒 **Customer Support Hours:**\n\n• **Live Chat:** 24/7 (that's me!)\n• **Phone Support:** Monday-Friday 9 AM - 8 PM EST\n• **Email Support:** Response within 24 hours\n• **Weekend Support:** Saturday 10 AM - 6 PM EST\n\nI'm available right now to help with most questions!"
+    - text: "**We're Here When You Need Us:**\n✅ AI Chat: 24/7 (instant responses)\n✅ Phone: Mon-Fri 9 AM-8 PM EST\n✅ Email: 24-hour response guarantee\n✅ Weekend: Saturday 10 AM-6 PM\n\nHow can I help you right now?"
+
+  utter_human_agent:
+    - text: "🙋‍♂️ **Connecting you to a human agent...**\n\nI'm transferring you to our live support team. They'll be able to provide personalized assistance for your specific needs.\n\n**Average wait time:** 2-3 minutes\n**Your conversation history** will be shared with the agent\n\nPlease hold on! 📞"
+    - text: "**Human Support Request Received!**\n\nI'll connect you with one of our customer service representatives right away. They have access to:\n• Your account information\n• Order history\n• Previous conversations\n\nTransferring now... Please wait! 🔄"
+
+  utter_order_status:
+    - text: "📦 **Order Status Help:**\n\nTo check your order status, I'll need your:\n• Order number (starts with #)\n• Email address used for purchase\n\nAlternatively, you can:\n• Log into your account\n• Check your email for tracking info\n• Use our order tracking page\n\nWhat's your order number?"
+    - text: "**Track Your Order:**\n✅ Order lookup by number\n✅ Email notifications sent\n✅ Real-time tracking updates\n✅ Delivery notifications\n\nProvide your order number and I'll help you track it!"
+
+  utter_technical_support:
+    - text: "🔧 **Technical Support Available:**\n\nI can help with:\n• Product setup and installation\n• Troubleshooting common issues\n• Software/app problems\n• Hardware malfunctions\n• Warranty information\n\nWhat product are you having trouble with? Let me know the specific issue!"
+    - text: "**Tech Support Ready!**\n✅ Setup assistance\n✅ Troubleshooting guides\n✅ Software help\n✅ Hardware issues\n✅ Warranty support\n\nDescribe your technical problem and I'll provide step-by-step solutions!"
+
+  utter_pricing:
+    - text: "💰 **Pricing Information:**\n\nFor current prices and special offers:\n• Visit our website for real-time pricing\n• Check for ongoing sales and discounts\n• Sign up for price alerts\n• Ask about bulk discounts\n\nWhat specific product pricing are you interested in? I can guide you to the right page!"
+    - text: "**Get the Best Prices:**\n✅ Real-time pricing online\n✅ Daily deals and discounts\n✅ Price match guarantee\n✅ Bulk order discounts\n✅ Member exclusive prices\n\nWhich product's price would you like to know about?"
+
+  utter_already_answered:
+    - text: "I've already shared that information. Would you like to know something else?"
+    - text: "Sure! I will connect you to a human agent. Please wait while I transfer your request."
+    - text: "Connecting you to a real person now. Please hold on!"
+
+  utter_greet_personal:
+    - text: "Hello, {name}! How can I help you today?"
+    - text: "Hi {name}, what can I do for you?"
+
+  utter_fallback:
+    - text: "Sorry, I didn't quite understand that. Could you please rephrase or ask something else?"
+    - text: "I'm not sure I got that. Can you clarify your question?"
+    - text: "Oops, I didn't understand. Try asking in a different way or choose a topic I can help with."
+
+  utter_product_link:
+    - text: "Check out our [product catalog](https://yourwebsite.com/products) for more details!"
+
+  utter_show_logo:
+    - text: "Here is our company logo!"
+      image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+
+  utter_ask_help:
+    - text: "I can help you with product info, order status, returns, shipping, payment, and more! What would you like to know?"
+
+  utter_product_card:
+    - text: |
+        **Featured Product: SuperPhone X**
+        The latest smartphone with amazing features and battery life.
+        [View Details](https://yourwebsite.com/products/superphone-x)
+      image: "https://yourwebsite.com/images/superphone-x.png"
+      buttons:
+        - title: "Buy Now"
+          payload: "/buy_product{\"product\": \"SuperPhone X\"}"
+
+actions:
+- action_check_repeat_intent
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: name
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
